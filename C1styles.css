@@ -21,11 +21,12 @@ header{
 
 }
 .logo p{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bolder;
     color: #2D3748;
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-right: 15px;
 
 }
 
@@ -49,6 +50,8 @@ nav a{
     color: #C4B5FD;
     position: relative;
     transition: color 0.3s ease;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 nav a:hover{
@@ -57,7 +60,7 @@ nav a:hover{
  
 nav a.active{
     color: #FF6B4A;
-    font-weight: 500;
+    font-weight: 700;
 }
 nav a.active::after{
     content: '';
@@ -78,8 +81,9 @@ nav a.active::after{
     cursor: pointer;
     font-size: 14px;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     transition: background-color 0.3s ease;
+    margin-left: 20px;
 }
 
 #cvlink:hover {
