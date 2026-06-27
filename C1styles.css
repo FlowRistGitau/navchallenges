@@ -7,7 +7,7 @@
 
 header{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 5px;
     padding-left: 5px;
@@ -19,6 +19,9 @@ header{
     right: 0;
     width: 100%;
 
+}
+.logo{
+    flex: 1;
 }
 
 .logo p{
@@ -34,6 +37,7 @@ header{
 nav{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     background-color:#1E293B ;
     border-bottom-left-radius: 18px;
@@ -72,7 +76,11 @@ nav a.active::after{
     height: 2px;
     background-color: #FF6B4A;
 }
-
+#cvlinkcont{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
 #cvlink {
     background-color:#1E293B ;
     color: white;
