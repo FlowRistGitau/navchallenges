@@ -107,6 +107,10 @@ nav a.active::after{
     text-align: center;
     padding: 120px 40px 60px 40px;
     background-color: #F4F6F8;
+    min-height: 100vh;           
+    box-sizing: border-box;      
+    justify-content: center;    
+    padding: 80px 40px 40px 40px
 
 }
 #eyebrow{
