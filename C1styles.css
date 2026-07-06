@@ -48,7 +48,7 @@ header{
     display: none;
 }
 
-nav{
+header nav{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ nav{
 
 }
  
-nav a{
+header nav a{
     text-decoration: none;
     color: #C4B5FD;
     position: relative;
@@ -73,15 +73,15 @@ nav a{
     font-weight: 400;
 }
 
-nav a:hover{
+header nav a:hover{
     color:#6D28D9;
 }
  
-nav a.active{
+header nav a.active{
     color: #FF6B4A;
     font-weight: 600;
 }
-nav a.active::after{
+header nav a.active::after{
     content: '';
     position: absolute;
     left: 0;
@@ -169,16 +169,24 @@ h1{
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24;
+    font-family: 'Material Symbols Outlined' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+#cta .material-symbols-outlined{
 
  transition: transform  0.3s ease;
 
 }
-
 
 #cta:hover .material-symbols-outlined{
     transform: translateX(4px);
@@ -295,6 +303,131 @@ h2{
     font-weight: 500;
 }
 
+.toolpill i[class^="devicon-"] {
+    font-family: 'devicon' !important;
+    font-size: 20px;
+}
+
+
+#contact{
+    display: block;
+    background-color: #1E293B;
+    padding: 50px;
+}
+.footertop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+
+
+}
+.footerlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+#logo2{
+    font-size: 32px;
+    font-weight: bolder;
+    color: #FFFFFF ;
+    
+}
+#locationtag{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#locationicon{
+    color: #FF6B4A;
+    font-size: 15px;
+    font-weight: semi-bold;
+
+}
+#location{
+    font-size: 15px;
+    color: #64748B ;
+}
+
+.footercontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+h3{
+    font-size:18px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #FF6B4A;
+    letter-spacing: 0.06em;
+    padding-bottom: 7px;
+
+}
+
+#contactnav{
+    display: flex;
+    gap: 20px;
+    
+}
+.contactlogos{
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: opacity 0.3s ease;
+}
+
+.contactlogos:hover{
+    opacity: 0.7;
+}
+#contactnav .material-symbols-outlined{
+    font-size: 24px;
+}
+
+#footernav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#footernav nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+#footernav nav a{
+    text-decoration: none;
+    color: #C4B5FD;
+    transition: color 0.3s ease;
+    font-size: 15px;
+    font-weight: 400;
+}
+#footernav nav a:hover{
+    color:#6D28D9;
+}
+
+.footerbottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid #F4F6F8;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footerbottom p{
+    color: #64748B;
+    font-size: 17px;
+}
+
+
+
 
 @media screen and (max-width:768px){
   
@@ -323,7 +456,7 @@ h2{
     }
 
 
-    nav{
+    header nav{
         display: none;
         position: fixed;
         top: 0;
@@ -341,7 +474,7 @@ h2{
         border-radius: 0;
     }
 
-    nav a{
+    header nav a{
         font-size: 22px;
     }
 
@@ -421,9 +554,7 @@ h2{
         gap: 20px;
 
     }
-    .statcard{
-
-    }
+    
 
 
 }
