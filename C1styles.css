@@ -278,34 +278,51 @@ h2{
 
 }
 #skills {
-    padding: 50px;
     background-color:#F4F6F8;
+    padding: 40px;
     
 }
 
  #toolkit{
-    display: flex;   
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));  
     gap: 20px;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 50px;
 
  }
-
-.toolpill{
+ .skillheader{
     display: flex;
-    padding: 7px 10px;
+    flex-direction: column;
+ }
+
+ .skillcard{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid #1E293B;
+    padding: 20px;
     background-color: #FFFFFF;
-    gap: 5px;
-    border-radius: 70px;
-    border: solid #1E293B 1px;
-    align-items: center;
-    color: #475569;
-    font-weight: 500;
-}
+    border-radius: 10px;
+
+ }
+ .toolpill{
+    display: flex;
+    gap: 10px;
+
+ }
 
 .toolpill i[class^="devicon-"] {
     font-family: 'devicon' !important;
     font-size: 20px;
+}
+
+.toolname{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E293B;
+
+
 }
 
 
