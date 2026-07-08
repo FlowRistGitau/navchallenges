@@ -208,16 +208,18 @@ h1{
 #abouttoprow{
     display: flex;
     margin: 32px;
-    gap: 50px;
+    gap: 70px;
     padding: 40px;
     align-items: center;
 
 }
 
-#image{
-   
+#image img{
+
+   border-radius: 30px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.30);
 }
-#eyebrow2{
+.eyebrow2{
     font-size: 15px;
     font-weight: 600;
     color: #FF6B4A;
