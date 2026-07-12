@@ -300,7 +300,7 @@ h2{
     
 }
 
- #toolkit{
+#toolkit{
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));  
     gap: 50px;
@@ -617,11 +617,7 @@ h3{
         gap: 20px;
 
     }
-    #skills{
-        padding: 20px;
-    }
     
-
     .skillheader{
         display: flex;
         flex-direction: column;
@@ -687,4 +683,17 @@ h3{
 
 @media screen and (max-width:480px){
 
+    #skills{
+        padding: 10px;
+    }
+    
+    .skillheader {
+        padding: 10px;
+    }
+
+    #toolkit {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
 }
