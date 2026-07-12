@@ -683,6 +683,9 @@ h3{
 
 @media screen and (max-width:480px){
 
+    #cta{
+        font-size: 15px;
+    }
     #skills{
         padding: 20px;
     }
