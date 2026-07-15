@@ -719,6 +719,12 @@ h3{
         margin-top: 20px;
     }
 
-
+    .footerbottom{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        width: 100%;
+    }
 
 }
